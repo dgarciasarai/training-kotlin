@@ -17,5 +17,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         button.text = "Hide"
+
+        val item = Item()
+        var url = item.url
+        item.url = "hello"
     }
 }

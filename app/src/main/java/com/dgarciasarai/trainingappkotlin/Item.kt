@@ -13,5 +13,5 @@ class Item {
             field = "title: $value"
         }
 
-    var url: String = ""
+    val url: String = ""
 }
