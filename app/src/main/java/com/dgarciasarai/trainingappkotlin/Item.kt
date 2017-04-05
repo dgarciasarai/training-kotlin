@@ -5,4 +5,6 @@ package com.dgarciasarai.trainingappkotlin
  */
 class Item {
     
+    var title: String = ""
+    var url: String = ""
 }
