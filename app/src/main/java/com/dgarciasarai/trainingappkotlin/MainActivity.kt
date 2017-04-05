@@ -10,10 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val item = Item("title", "url")
-
-        var (title, url) = item
-
         button.setOnClickListener { toast(editText.text) }
+
+        val items = listOf(Item("title1", "url1"), Item("title2", "url2"))
+        val empty = emptyList<Item>()
     }
 }
