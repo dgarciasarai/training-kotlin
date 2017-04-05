@@ -6,5 +6,9 @@ package com.dgarciasarai.trainingappkotlin
 class Item {
     
     var title: String = ""
+        get() {
+            return "title: $field"
+        }
+    
     var url: String = ""
 }
