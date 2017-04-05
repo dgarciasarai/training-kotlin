@@ -7,13 +7,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-    button.setOnClickListener {
-      val text = editText.text
-      Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
+        button.setOnClickListener {
+            val text = editText.text
+            Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
+        }
     }
-  }
 }
