@@ -17,5 +17,6 @@ class MainActivity : AppCompatActivity() {
         val sorted = items
                 .sortedBy(Item::title)
                 .filter { it.url.isNotEmpty() }
+                .map(Item::title)
     }
 }
