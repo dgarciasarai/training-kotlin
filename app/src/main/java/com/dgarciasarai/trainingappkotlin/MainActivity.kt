@@ -17,12 +17,9 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
         }
 
-        button.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(v: View?) {
-                val text = editText.text
-                Toast.makeText(this@MainActivity, text, Toast.LENGTH_SHORT).show()
-            }
-
-        })
+        button.setOnClickListener {
+            val text = editText.text
+            Toast.makeText(this@MainActivity, text, Toast.LENGTH_SHORT).show()
+        }
     }
 }
