@@ -9,6 +9,9 @@ class Item {
         get() {
             return "title: $field"
         }
-    
+        set(value) {
+            field = "title: $value"
+        }
+
     var url: String = ""
 }
