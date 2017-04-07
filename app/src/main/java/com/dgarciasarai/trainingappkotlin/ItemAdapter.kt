@@ -15,8 +15,10 @@ class ItemAdapter(val items: List<Item>) : RecyclerView.Adapter<ItemAdapter.View
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.itemView.item_title.text = items[position].title
-        holder.itemView.item_image.loadUrl(items[position].url)
+        with(holder.itemView) {
+            item_title.text = items[position].title
+            item_image.loadUrl(items[position].url)
+        }
     }
 
     override fun getItemCount() = items.size
