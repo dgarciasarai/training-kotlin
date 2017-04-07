@@ -17,9 +17,7 @@ class ItemAdapter(val items: List<Item>): RecyclerView.Adapter<ItemAdapter.ViewH
 
     }
 
-    override fun getItemCount(): Int {
-        
-    }
+    override fun getItemCount() = items.size
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
