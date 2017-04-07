@@ -14,11 +14,9 @@ class ItemAdapter(val items: List<Item>) : RecyclerView.Adapter<ItemAdapter.View
         return ViewHolder(parent.inflate(R.layout.view_item))
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        with(holder.itemView) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) = with(holder.itemView) {
             item_title.text = items[position].title
             item_image.loadUrl(items[position].url)
-        }
     }
 
     override fun getItemCount() = items.size
