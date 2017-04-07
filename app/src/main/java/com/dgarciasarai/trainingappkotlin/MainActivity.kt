@@ -12,6 +12,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         recycler.layoutManager = GridLayoutManager(this, 2)
-        recycler.adapter = ItemAdapter()
+        recycler.adapter = ItemAdapter(getItems())
     }
 }
